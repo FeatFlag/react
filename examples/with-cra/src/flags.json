@@ -1,0 +1,18 @@
+[
+  {
+    "name": "feat",
+    "isActive": true
+  },
+  {
+    "name": "featDisabled",
+    "isActive": false
+  },
+  {
+    "name": "hookSupport",
+    "isActive": false
+  },
+  {
+    "name": "hocSupport",
+    "isActive": false
+  }
+]
