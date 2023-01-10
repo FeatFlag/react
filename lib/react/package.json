@@ -1,0 +1,56 @@
+{
+  "name": "@featflag/react",
+  "version": "0.0.1",
+  "description": "Manage react features flags easily and effectively",
+  "bundleDependencies": true,
+  "license": "MIT",
+  "author": {
+    "name": "Youssef EL HADDADY",
+    "email": "yelhaddady55@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FeatFlag/react"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.19",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "postcss": "^8.4.18",
+    "tsup": "6.2.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "keywords": [
+    "react",
+    "feature",
+    "flags",
+    "toggles",
+    "feature flags",
+    "feature toggles",
+    "react feature flags",
+    "CI/CD",
+    "continuous delivery",
+    "continuous integration"
+  ]
+}
