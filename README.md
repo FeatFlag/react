@@ -2,14 +2,14 @@
 
 Manage react features flags easily and effectively
 
-##What's in
+## What's in
 
 - Zero dependencies
 - Full TypeScript support
 - Render Props API, hooks API, high order component API...
 - Named and nested flags support
 
-##Installation
+## Installation
 
 ```bash
 pnpm add @featflag/react
@@ -19,7 +19,7 @@ yarn add @featflag/react
 npm install @featflag/react
 ```
 
-##Usage
+## Usage
 Create your feature flags array like :
 
 ```json
@@ -54,14 +54,14 @@ To use FeatFlag in your application, wrap your component tree with the FlagsProv
 ```
 
 You can then use the amazing utilities to check your features and make decisions:
-###Using hooks
+### Using hooks
 Use the `useFeature` hook to check if a single feature is enabled in your components
 
 ```javascript
 const isDarkModeActive: boolean = useFeature('darkMode');
 ```
 
-###Using components
+### Using components
 Use the `Feature` component, and pass your flag's name to it as a props to render the children if the feature is enabled :
 
 ```javascript
@@ -88,12 +88,12 @@ Another way to do the same :
 </Feature>
 ```
 
-###Using HOC API
+### Using HOC API
 Also, you can wrap a component behind a feature flag, so the component is only render when the feature is enabled
 
 ```javascript
 export default withFeature('mapSupport')(Map);
 ```
 
-##License
-@featflag/react is MIT licensed. See [LICENSE](./LICENSE) for more details.
+## License
+`@featflag/react` is MIT licensed. See [LICENSE](./LICENSE) for more details.
